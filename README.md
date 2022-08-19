@@ -1,21 +1,9 @@
-# We are DefCon Holland...
+# MCH 2002 is over...
 
-We are a collective of people that organize the DC3115 and DC3120 meetups.
+But whatever got sent on the text remains in this archive.
 
-DefCon Holland meetups are meetups for Dutch Hackers in a Dutch bar after work or school. We will have a stage with amazing speakers, some oldschool games and if you had too much beer & bitterballen you can do some hacker karaoke if you want.
 
-## Blog
-
-Last 10 posts
-
-<ul>
-{% for post in site.posts %}
-	{% if forloop.index <= 10 %}
-	    <li>
-	        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} ({{ post.date | date: "%Y-%m-%d"}})</a>
-	    </li>
-	{% endif %}
+{% for page in site.pages %}
+[![Sheet {{ page.title }}](/img/{{ page.title }}.png)]({{ page.url }})
 {% endfor %}
-</ul>
 
-[All posts](/blog)

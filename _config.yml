@@ -1,11 +1,11 @@
 theme: jekyll-theme-hacker
 
-paginate: 10
-plugins: [jekyll-paginate]
-paginate_path: "blog/:num/"
+#paginate: 10
+#plugins: [jekyll-paginate]
+#paginate_path: "blog/:num/"
 
-title: DefCon Holland
-description: DefCon groups DC3115 and DC3120
+title: MCH2022Telex
+description: Output of the @MCH2022Telex project
 
 timezone: Europe/Amsterdam
 future: true
@@ -13,9 +13,21 @@ encoding: utf-8
 
 permalink: pretty
 markdown: kramdown
-show_downloads: false
+show_downloads: true
 github:
   is_project_page: true
 
 plugins:
   - jekyll-sitemap
+
+repository: mrseccubus/mchtelex
+
+collections:
+  pages:
+    output: true
+
+exclude:
+  - serve
+  - Gemfile
+  - Gemfile.lock
+  - README.md

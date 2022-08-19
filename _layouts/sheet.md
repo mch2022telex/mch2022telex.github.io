@@ -49,7 +49,7 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 </div>
 
 {% if page.children %}
-	You can download the <a href='/img/{{ page.title }}.png'>full image here</a>.
+	You can download the <a href='/img/{{ page.title }}.png'>full image here</a>.<br>
 {% endif %}
 
 {% if prevurl %}<a href="{{prevurl}}" class="prev">&lt;</a>{% else %}&lt;{% endif %} {{ page.title }}

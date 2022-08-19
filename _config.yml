@@ -23,7 +23,7 @@ plugins:
 repository: mrseccubus/mchtelex
 
 collections:
-  pages:
+  sheets:
     output: true
   posts:
     output: false

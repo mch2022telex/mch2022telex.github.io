@@ -47,5 +47,10 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 	{% endif %}
 	{{ content }}
 </div>
+
+{% if page.children %}
+	You can download the <a href='/img/{{ page.title }}.png'>full image here</a>.
+{% endif %}
+
 {% if prevurl %}<a href="{{prevurl}}" class="prev">&lt;</a>{% else %}&lt;{% endif %} {{ page.title }}
 {% if nexturl %}<a href="{{nexturl}}" class="nxt">&gt;</a>{% else %}&gt;{% endif %}

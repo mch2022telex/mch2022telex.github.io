@@ -32,3 +32,4 @@ exclude:
   - serve
   - Gemfile
   - Gemfile.lock
+  - vendor/bundle # See https://jekyllrb.com/docs/troubleshooting/

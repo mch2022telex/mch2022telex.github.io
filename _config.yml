@@ -25,6 +25,8 @@ repository: mrseccubus/mchtelex
 collections:
   pages:
     output: true
+  posts:
+    output: false
 
 exclude:
   - serve

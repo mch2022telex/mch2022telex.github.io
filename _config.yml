@@ -32,4 +32,3 @@ exclude:
   - serve
   - Gemfile
   - Gemfile.lock
-  - README.md

@@ -20,7 +20,7 @@ github:
 plugins:
   - jekyll-sitemap
 
-repository: mrseccubus/mchtelex
+repository: mch2022telex/mch2022telex.github.io
 
 collections:
   sheets:

@@ -29,13 +29,18 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 {% if nexturl %}<a href="{{nexturl}}" class="nxt">&gt;</a>{% else %}&gt;{% endif %}
 <br>
 {% if page.children %}
-	Some sections of the page below may contain links
-{% endif %}
+Tweets will appear below if you hove over them... You can click them too.
+<iframe id='twitframe' border=0 frameborder=0 height=250 width=550
+ src="" hidden=true></iframe>{% endif %}
+
 <div class='img'>
 	{% if page.children %}
 		{% for c in page.children -%}
 			{% if c.url -%}
-				<a href='{{ c.url }}' title='{{ c.url }}' target='_new'>
+				<a href='{{ c.url }}' title='{{ c.url }}' target='_new' onMouseOver="
+						document.getElementById('twitframe').src = 'https://twitframe.com/show?url={{ c.url | uri_escape }}'
+						document.getElementById('twitframe').hidden = false
+				  ">
 					<img class='subimg subimgurl' src='/img/{{ c.id }}.png'>
 				</a>
 			{%- else -%}
